@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section{
+      width: 100%;
+    }
+    main{
+      padding: 20px 0;
+    }
+    #Utama,#About{
+      text-align: center;
+    }
+    #atas{
+      background-image: linear-gradient(135deg, red, yellow);
+    }
+    nav{
+      width: 100%;
+      height: 35px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a{
+      color: black;
+      text-decoration-line: none;
+      margin-right: ;
+      margin-left: ;
+    }
+    a:hover{
+      background-color: #35fff9;
+      padding: 5px;
+      border-radius: 10px;
+      transition-duration: 2s;
+    }
+    header{
+      margin-top: 40px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .Produk{
+      text-align: center;
+      display: inline-block;
+      padding: 10px;
+      align-items: center;
+    }
+    button{
+      padding: 5px 30px;
+      border: none;
+      background-color: #fd8e8e;
+      border-radius: 10px;
+    }
+    button:hover{
+      background-color: #fd8e8eab;
+    }
+    footer{
+      background-color: #9f9f9fd2;
+    }
+    .foo{
+      display: inline-block;
+      padding: 0 50px;
+    }
+    #cek-keranjang{
+      display: flex;
+    }
+    #Keranjang{
+      margin: auto;
+      width: 80%;
+      height: 50px;
+      margin-bottom: 20px;
+      border-radius: none;
+    }
+    #Keranjang:hover{
+      background-color: #fd8e8e;
+    }
+  </style>
+  <script>
+    let jumlah = {
+      "Sereal" : 0,
+      "Susu" : 0,
+      "Poki" : 0,
+      "Permen" : 0
+    }
+    function Sereal(angka){
+      jumlah.Sereal += angka;
+      console.log(jumlah)
+    }
+    function Poki(angka){
+      jumlah.Poki += angka;
+    }
+    function Susu(angka){
+      jumlah.Susu += angka;
+    }
+    function Permen(angka){
+      jumlah.Permen += angka;
+    }
+    function Keranjang(){
+      let dataString = JSON.stringify(jumlah);
+      alert(dataString)
+    }
+  </script>
+</head>
+<body>
+  <div id="atas">
+    <nav>
+      <a href="#Utama">Utama</a>
+      <a href="#Produk">Produk</a>
+      <a href="#About">About</a>
+      <a href="keranjang.html"><img src="keranjang.png" alt="" height="auto" width="50px"></a>
+    </nav>
+    <header>
+      <h1>Selamat Datang Di Toko Sereal</h1>
+    </header>
+  </div>
+  <section>
+    <main id="Utama">
+      <p>Selamat datang.Kami senang anda mengunjungi toko online kami. Silahkan berbelanja sesuai keinginan anda.</p>
+    </main>
+    <main id="Produk">
+      <div class="Produk">
+        <img src="produk11.png" alt="Sereal" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Sereal(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk11.png" alt="Sereal" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Sereal(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk11.png" alt="Sereal" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Sereal(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk2.png" alt="Poki" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Poki(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk2.png" alt="Poki" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Poki(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk2.png" alt="Poki" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Poki(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk3.png" alt="Susu" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Susu(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk3.png" alt="Susu" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Susu(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk3.png" alt="Susu" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Susu(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk4.png" alt="Permen" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Permen(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk4.png" alt="Permen" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Permen(1)">Beli</button>
+      </div>
+      <div class="Produk">
+        <img src="produk4.png" alt="Permen" width="100px" height="auto">
+        <h3>Rp 15.000</h3>
+        <button onclick="Permen(1)">Beli</button>
+      </div>
+    </main>
+    <main id="About">
+      <p>Terima Kasih sudah berkunjung ke situs web kami. Selamat tinggal!!</p>
+    </main>
+  </section>
+  <div id="cek-keranjang">
+    <button id="Keranjang" onclick="Keranjang()">Keranjang</button>
+  </div>
+  <footer>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+    <p class="foo">produk</p>
+  </footer>
+</body>
+</html>
