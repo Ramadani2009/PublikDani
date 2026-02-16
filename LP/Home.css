@@ -1,0 +1,32 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+nav {
+	height: 50px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: blue;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#induk {
+	display: grid;
+	grid-template-areas:
+	'img'
+	'judul'
+	'des';
+	gap: 10px;
+}
+
+#anak1induk {
+	grid-area: des;
+}
